@@ -77,7 +77,7 @@ while not game_over:
 
     direction = input("Enter a direction to move: ")
 
-    if direction == 'q' or "quit":
+    if direction == 'q' or direction == 'quit':
         print("See you next time")
         game_over = True
     elif direction not in directions:

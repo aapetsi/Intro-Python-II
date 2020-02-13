@@ -2,6 +2,7 @@
 # currently.
 from item import Item
 
+
 class Player:
     def __init__(self, name, current_room, inventory=[]):
         self.name = name
@@ -11,7 +12,7 @@ class Player:
     def add_to_inventory(self, item):
         new_item = Item(item.name, item.description)
         self.inventory.append(new_item)
-    
+
     def get_item(self, item):
         if item in [x.name for x in self.current_room.items]:
             self.current_room.items.remove(item)
